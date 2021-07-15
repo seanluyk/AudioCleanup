@@ -10,7 +10,6 @@ If you haven't already, [install SoX](https://github.com/seanluyk/AudioCleanup/b
 2. [SoX Basics](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_Basics.md)
 3. Advanced SoX
 ## Additional Resources
-### Sound Exchange (SoX)
 - [How to Process Audio Files from the Command Line with SoX](https://www.yesik.it/blog/2018-sox)
 - [Manipulating Audio with Mac Terminal](https://medium.com/@sedwardscode/manipulating-audio-using-the-mac-terminal-a7b87c516b7a)
 - [The SoX of Silence](https://digitalcardboard.com/blog/2009/08/25/the-sox-of-silence/)
