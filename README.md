@@ -4,7 +4,7 @@ This repository contains materials and resources for the Audio Cleanup With SoX 
 ## Tools Used in this Workshop
 - [Sound Exchange (SoX)](http://sox.sourceforge.net/)
 ## Installation and Setup
-If you haven't already, [install SoX](https://github.com/seanluyk/audio101/blob/master/SoX_installation.md)
+If you haven't already, [install SoX](https://github.com/seanluyk/AudioCleanup/blob/master/SoX_installation.md)
 ## Exercises
 1. Command Line Basics
 2. SoX Basics
