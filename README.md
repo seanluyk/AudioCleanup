@@ -3,7 +3,11 @@ This repository contains materials and resources for the Audio Cleanup With SoX 
 
 ## Tools Used in this Workshop
 - [Sound Exchange (SoX)](http://sox.sourceforge.net/)
-## Tutorials
+## Exercises
+1. Command Line Basics
+2. SoX Basics
+3. Advanced SoX
+## Additional Resources
 ### Sound Exchange (SoX)
 - [How to Process Audio Files from the Command Line with SoX](https://www.yesik.it/blog/2018-sox)
 - [Manipulating Audio with Mac Terminal](https://medium.com/@sedwardscode/manipulating-audio-using-the-mac-terminal-a7b87c516b7a)
