@@ -1,11 +1,12 @@
 # Audio Cleanup With SoX
 This repository contains materials and resources for the Audio Cleanup With SoX Workshop, held as part of the [2021 SpokenWeb Sound Studies Institute (SSI)](https://spokenweb.ca/institutes/), July 28, 2021, taught by Chelsea Miya and [Sean Luyk](https://sites.google.com/a/ualberta.ca/sean-luyk/). 
 
-## Tools Used in this Workshop
-- [Sound Exchange (SoX)](http://sox.sourceforge.net/)
+## Ingredients
+1. SpokenWeb Alberta files
+2. [Sound Exchange (SoX)](http://sox.sourceforge.net/)
 ## Installation and Setup
 If you haven't already, [install SoX](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_installation.md)
-## Exercises
+## Activities
 1. Command Line Basics
 2. [SoX Basics](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_Basics.md)
 3. Advanced SoX
