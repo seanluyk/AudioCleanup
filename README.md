@@ -7,9 +7,9 @@ This repository contains materials and resources for the Audio Cleanup With SoX 
 ## Installation and Setup
 - If you haven't already, [install SoX](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_installation.md)
 ## Activities
-1. [Command Line Basics]()
+1. [Command Line Basics](https://github.com/seanluyk/AudioCleanup/blob/main/CommandLine.md)
 2. [SoX Basics](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_Basics.md)
-3. [Advanced SoX]()
+3. [Advanced SoX](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_Advanced.md)
 ## Additional Resources
 - [How to Process Audio Files from the Command Line with SoX](https://www.yesik.it/blog/2018-sox)
 - [Manipulating Audio with Mac Terminal](https://medium.com/@sedwardscode/manipulating-audio-using-the-mac-terminal-a7b87c516b7a)
