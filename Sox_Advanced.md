@@ -1,6 +1,6 @@
 ## Exercise 2: SoX Advanced
 
-Batch Processing
+## Batch Processing
 
 ### 3.1 Adjusting Settings
 You will need to tweak settings depending on the quality of the clip (e.g. noisy vs clean).
