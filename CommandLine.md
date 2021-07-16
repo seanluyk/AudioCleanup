@@ -7,6 +7,22 @@ On Mac
 2) Search “terminal.”
 3) Open the Terminal app.
 
+
+### Terminal Commands: Quick Guide
+| Command      | Action |
+| ----------- | ----------- |
+| pwd    | show directory you are currently located in   |
+| ls   | list files in current directory  |
+| cd [file path]   | change directories <br/> e.g. “cd Documents”   |
+| cd -   | navigate to previous directory |
+| ~/   | navigate from root directory  <br/> e.g. “cd ~/Desktop/SoundFiles”  |
+| mkdir [folder name]   | create folder  <br/> e.g. “mkdir SoundFX”  |
+| mv [file name/location] [new filename/location]   | move file location and/or change file name <br/> e.g. “mv old.wav /SoundFX/new.wav” |
+| up/down arrow   | scroll through previous commands |
+  
+
+
+
 ### 1.2 Show the directory (folder) you are currently located in
 
 ~~~shell
