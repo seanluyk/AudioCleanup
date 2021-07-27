@@ -57,4 +57,4 @@ pad [amount of silence HH:MM:SS to add at the beginning of your file] [amount of
 ~~~shell
 sox filename1.wav filename2.wav outputfile.wav \
 fade [fade-in position HH:MM:SS] [fade out start HH:MM:SS]
-~~~ 
+~~~
