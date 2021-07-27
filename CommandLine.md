@@ -90,3 +90,10 @@ mkdir soundfx
 mv rain.wav /soundfx/rain.wav
 ~~~
 - This <i>moves</i> our sound file called "rain.wav" into the folder "soundfx"
+
+### 1.9 Scroll through previous commands
+- In <b>Terminal</b>, use the up/down arrows to scroll through your command history
+- Execute previous commands by hitting Enter (saving you time!)
+- You can also wipe the Terminal window clean by typing "clear"
+
+**TIP: Even after you have "cleared" the Terminal screen, you can still scroll through previous commands
