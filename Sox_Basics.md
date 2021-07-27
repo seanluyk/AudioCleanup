@@ -74,3 +74,7 @@ fade [fade-in position HH:MM:SS] [fade out start HH:MM:SS]
 sox inputfile.wav outputfile.wav \
 trim [beginning value in HH:MM:SS] [end value in HH:MM:SS]
 ~~~ 
+- You can also set fade in and out times automatically by including stati right in the command: 
+~~~shell
+sox in.wav out.wav fade t 10 $(soxi -d in.wav) 10
+~~~ 
