@@ -54,26 +54,28 @@ sox -m thunder.wav rain.wav storm2.wav
 #### Pad a recording with silence
 - In **Terminal** type:
 ~~~shell
-sox inputfile.wav outputfile.wav \
-pad [amount of silence HH:MM:SS to add at the beginning of your file] [amount of silence HH:MM:SS to add at the end of your file]  
+sox storm2.wav stormpad.wav \
+pad  5 [amount of silence HH:MM:SS to add at the beginning of your file] [amount of silence HH:MM:SS to add at the end of your file]  
 ~~~ 
 #### Apply a fade in/fade out
 - Similar to the pad command, the fade command can be used to add fade-ins/outs to a file:
 - In **Terminal** type:
 ~~~shell
-sox inputfile.wav outputfile.wav \
-fade [fade-in position HH:MM:SS] [fade out start HH:MM:SS]
+sox stormpad.wav stormfade.wav \
+fade 5 [fade-in position HH:MM:SS] 2:00 [fade out start HH:MM:SS]
 ~~~
 #### Trim
 - Used for cutting sections of an audio file
 - Specify how much to trim from start and end of file (*where the file should end)
 - Use 0 as first parameter is not trimming from start
-- - In **Terminal** type:
+- Navigate to the radio directory
+- In **Terminal** type:
 ~~~shell
-sox inputfile.wav outputfile.wav \
-trim [beginning value in HH:MM:SS] [end value in HH:MM:SS]
+sox celeb1.wav celeb1trim.wav \
+trim 11 [beginning value in HH:MM:SS] 3:30 [end value in HH:MM:SS]
 ~~~ 
-- You can also set fade in and out times automatically by including stati right in the command: 
+- You can also set fade in and out times automatically by including stati right in the command:
+- In **Terminal** type: 
 ~~~shell
-sox in.wav out.wav fade t 10 $(soxi -d in.wav) 10
+sox celeb1.wav celeb1trim2.wav fade t 10 $(soxi -d in.wav) 10
 ~~~ 
