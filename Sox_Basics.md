@@ -27,7 +27,7 @@ sox bbc_rain---rai_nhu0506113.wav rain.wav remix 1 1,1
 ~~~ 
 - The first (comma separated) number specifies which channels to remix. The second indicates that two mono channels are to be created
 ### 2.3 Combine multiple audio files
-- In SoX there are multiple methods for combining audio files, which we'll experiment with below:
+- In SoX there are multiple methods for combining audio files, which we'll experiment with below to create a storm from our thunder and rain files:
 #### Concatenate files
 - In **Terminal** type:
 ~~~shell
