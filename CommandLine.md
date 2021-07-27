@@ -47,7 +47,7 @@ ls
 ### 1.4 Navigate to the folder that contains the sound files you want to work with
 - In <b>Terminal</b> type:
 ~~~shell
-cd ~/Desktop/SoX-Archive
+cd ~/Desktop/soxArchive
 ~~~
 - This changes directory or <i>moves</i> you into a new folder using the directions you provide.
 - You can also move up one level by typing "cd .."
@@ -60,7 +60,8 @@ ls
 ~~~
 - Now you should see the files in our corpus.
 
-<img width="582" alt="Screen Shot 2021-07-27 at 1 33 37 PM" src="https://user-images.githubusercontent.com/13421476/127216916-b2baa327-9b9a-4c2a-9a7c-ef5c59cf65b0.png">
+<img width="552" alt="Screen Shot 2021-07-27 at 2 08 04 PM" src="https://user-images.githubusercontent.com/13421476/127220503-1fb21454-2669-4389-bc36-bb9f301c83d6.png">
+
 
 
 ### 1.6 Rename file
