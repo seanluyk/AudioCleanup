@@ -69,6 +69,7 @@ fade 5 [fade-in position HH:MM:SS] 2:00 [fade out start HH:MM:SS]
 - Specify how much to trim from start and end of file (*where the file should end)
 - Use 0 as first parameter is not trimming from start
 - Navigate to the radio directory
+- celeb1.wav has ~11 seconds of unnecessary silence at the beginning we'd like to trim
 - In **Terminal** type:
 ~~~shell
 sox celeb1.wav celeb1trim.wav \
