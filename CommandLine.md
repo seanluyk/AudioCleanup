@@ -17,7 +17,7 @@ On Mac
 | cd -   | navigate to previous directory |
 | ~/   | navigate from root directory  <br/> e.g. “cd ~/Desktop/SoundFiles”  |
 | mkdir [folder name]   | create folder  <br/> e.g. “mkdir SoundFX”  |
-| mv [file name/location] [new filename/location]   | move file location and/or change file name <br/> e.g. “mv old.wav /SoundFX/new.wav” |
+| mv [file name/path] [new file name/path]   | move file location and/or change file name <br/> e.g. “mv old.wav /SoundFX/new.wav” |
 | up/down arrow   | scroll through previous commands |
   
 
@@ -31,7 +31,9 @@ pwd
 
 - This <i>prints</i> your current working directory. It is like map ("You are HERE") that shows you where you are located in your file system at a given moment.
 - The pwd command is useful because when working with files in Terminal, you need to give the computer instructions based on your current location.
-- It will return something like this: /Users/chelseamiya/Desktop
+- It will return something like this:
+
+<img width="414" alt="Screen Shot 2021-07-27 at 1 41 26 PM" src="https://user-images.githubusercontent.com/13421476/127217431-398b7c90-a35f-4530-877a-5aef1c93751f.png">
 
 
 ### 1.3 List files in current directory
@@ -58,6 +60,9 @@ ls
 ~~~
 - Now you should see the files in our corpus.
 
+<img width="582" alt="Screen Shot 2021-07-27 at 1 33 37 PM" src="https://user-images.githubusercontent.com/13421476/127216916-b2baa327-9b9a-4c2a-9a7c-ef5c59cf65b0.png">
+
+
 ### 1.6 Rename file
 - In <b>Terminal</b> type:
 ~~~shell
@@ -68,8 +73,8 @@ mv bbc_rain---rai_nhu0506113 rain.wav
 
 **TIP: To automatically insert the file name/path, click and drag the file from Finder into Terminal.
 
-- You can also <i>copy</i> files by typing "cp <file name/path> <new path>"
-- You can then <i>delete</i> the file by typing "rm <file name/path>"
+- You can also <i>copy</i> files by typing "cp [file name/path] [new path]"
+- You can then <i>delete</i> the file by typing "rm [file name/path]"
 
   
 ### 1.7 Create folder
