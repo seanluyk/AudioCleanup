@@ -6,7 +6,6 @@ This repository contains materials and resources for the Audio Cleanup With SoX 
 3. [SoX Cheatsheet](https://docs.google.com/document/d/14tT-iSiK918aZu7MjPhkPKkZ8cIe9NOZRIvaX4TVeew/edit)
 ## Installation and Setup
 - If you haven't already, [install SoX](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_installation.md)
-- Download SoXarchive.zip
 ## Activities
 1. [Command Line Basics](https://github.com/seanluyk/AudioCleanup/blob/main/CommandLine.md)
 2. [SoX Basics](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_Basics.md)
