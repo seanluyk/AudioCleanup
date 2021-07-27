@@ -26,7 +26,6 @@ soxi filename.wav
 ~~~shell
 sox --combine concatenate inputfile1.wav inputfile2.wav outputfile.wav
 ~~~
-- Let's combine rain.wav with thunder.wav to create a storm
 - Hear the result by typing:
 ~~~shell
 play outputfile.wav
@@ -42,6 +41,7 @@ play outputfile.wav reverse
 sox -m inputfile1.wav inputfile2.wav outputfile.wav
 ~~~ 
 - This will create one file that mixes the other files together
+- Let's combine rain.wav with thunder.wav to create a storm
 - Using the remix command, you can also mix individual channels from multiple files together very easily, although we won't work on this today
 - Play back the file you created using the merge command
 ### 2.3 Modify files
