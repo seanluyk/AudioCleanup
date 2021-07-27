@@ -12,7 +12,7 @@ sox filename.wav -n stat
 ~~~shell
 soxi filename.wav
 ~~~
- - This returns information found in the file's header
+ - This returns information found in the file's header (e.g. channels, bit rate, duration)
  - You can also type multiple file names after the main sox/soxi commands to get stats returned for multiple files at once for the purposes of comparison:
  ~~~shell
  soxi filename1.wav filename2.wav
@@ -26,6 +26,7 @@ soxi filename.wav
 ~~~shell
 sox --combine concatenate inputfile1.wav inputfile2.wav outputfile.wav
 ~~~
+- Let's combine rain.wav with thunder.wav to create a storm
 - Hear the result by typing:
 ~~~shell
 play outputfile.wav
