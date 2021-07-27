@@ -73,7 +73,7 @@ fade 5 [fade-in position HH:MM:SS] 2:00 [fade out start HH:MM:SS]
 - In **Terminal** type:
 ~~~shell
 sox celeb1.wav celeb1trim.wav \
-trim 11 [beginning value in HH:MM:SS] 4:55 [end value in HH:MM:SS]
+trim 11 [beginning value in HH:MM:SS] 4:50 [end value in HH:MM:SS]
 ~~~ 
 - You can also set fade in and out times automatically by including stati right in the command:
 - In **Terminal** type: 
