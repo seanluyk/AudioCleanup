@@ -13,12 +13,11 @@ sox filename.wav -n stat
 soxi filename.wav
 ~~~
  - This returns information found in the file's header (e.g. channels, bit rate, duration)
- - You can also type multiple file names after the main sox/soxi commands to get stats returned for multiple files at once for the purposes of comparison:
+ - You can also type multiple file names after the main stat/soxi commands to get stats returned for multiple files at once for the purposes of comparison:
  ~~~shell
  soxi filename1.wav filename2.wav
  sox filename1.wav filename2.wav -n stat
  ~~~
- - How are your results different when using stat vs. soxi?
 ### 2.2 Combine multiple audio files
 - In SoX there are multiple methods for combining audio files, which we'll experiment with below:
 #### Concatenate files
