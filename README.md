@@ -12,6 +12,7 @@ This repository contains materials and resources for the Audio Cleanup With SoX 
 2. [SoX Basics](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_Basics.md)
 3. [Advanced SoX](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_Advanced.md)
 ## Additional Resources
+- [SoX Manual](https://linux.die.net/man/1/sox)
 - [How to Process Audio Files from the Command Line with SoX](https://www.yesik.it/blog/2018-sox)
 - [Manipulating Audio with Mac Terminal](https://medium.com/@sedwardscode/manipulating-audio-using-the-mac-terminal-a7b87c516b7a)
 - [The SoX of Silence](https://digitalcardboard.com/blog/2009/08/25/the-sox-of-silence/)
