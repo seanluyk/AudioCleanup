@@ -18,7 +18,15 @@ soxi filename.wav
  soxi filename1.wav filename2.wav
  sox filename1.wav filename2.wav -n stat
  ~~~
-### 2.2 Combine multiple audio files
+ ### 2.2 Remix an audio file
+- In SoX it is possible to remix audio files in interesting ways
+- For example, you may want to turn a monaural file into a dual mono file, which mimics stereo
+- In **Terminal** type:
+~~~shell
+sox inputfile.wav outputfile.wav remix 1 1,1
+~~~ 
+- The first (comma separated) number specifies which channels to remix. The second indicates that two mono channels are to be created
+### 2.3 Combine multiple audio files
 - In SoX there are multiple methods for combining audio files, which we'll experiment with below:
 #### Concatenate files
 - In **Terminal** type:
@@ -43,7 +51,7 @@ sox -m inputfile1.wav inputfile2.wav outputfile.wav
 - Let's combine rain.wav with thunder.wav to create a storm
 - Using the remix command, you can also mix individual channels from multiple files together very easily, although we won't work on this today
 - Play back the file you created using the merge command
-### 2.3 Modify files
+### 2.4 Modify files
 - SoX had many commands that allow you to easily modify files using the command line. Today we'll work with some basic ones:
 #### Pad a recording with silence
 - In **Terminal** type:
