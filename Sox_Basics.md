@@ -64,6 +64,11 @@ pad  5 [amount of silence HH:MM:SS to add at the beginning of your file] [amount
 sox stormpad.wav stormfade.wav \
 fade 5 [fade-in position HH:MM:SS] 2:00 [fade out start HH:MM:SS]
 ~~~
+- You can also set fade in and out times automatically by including stati right in the command:
+- In **Terminal** type: 
+~~~shell
+sox celeb1.wav celeb1trim2.wav fade t 10 $(soxi -d in.wav) 10
+~~~ 
 #### Trim
 - Used for cutting sections of an audio file
 - Specify how much to trim from start and end of file (*where the file should end)
@@ -74,9 +79,4 @@ fade 5 [fade-in position HH:MM:SS] 2:00 [fade out start HH:MM:SS]
 ~~~shell
 sox celeb1.wav celeb1trim.wav \
 trim 10 [beginning value in HH:MM:SS] 4:45 [end value in HH:MM:SS]
-~~~ 
-- You can also set fade in and out times automatically by including stati right in the command:
-- In **Terminal** type: 
-~~~shell
-sox celeb1.wav celeb1trim2.wav fade t 10 $(soxi -d in.wav) 10
 ~~~ 
