@@ -49,7 +49,6 @@ sox -m inputfile1.wav inputfile2.wav outputfile.wav
 ~~~ 
 - This will create one file that mixes the other files together
 - Let's combine rain.wav with thunder.wav to create a storm
-- Using the remix command, you can also mix individual channels from multiple files together very easily, although we won't work on this today
 - Play back the file you created using the merge command
 ### 2.4 Modify files
 - SoX had many commands that allow you to easily modify files using the command line. Today we'll work with some basic ones:
