@@ -23,49 +23,65 @@ On Mac
 
 
 
-### 1.2 Show the directory (folder) you are currently located in
-
+### 1.2 Show the directory (folder) you are currently working in
+- In <b>Terminal</b> type:
 ~~~shell
 pwd
 ~~~
 
+- This <i>prints</i> your current working directory. It is like map ("You are HERE") that shows you where you are located in your file system at a given moment.
+- The pwd command is useful because when working with files in Terminal, you need to give the computer instructions based on your current location.
+- It will return something like this: /Users/chelseamiya/Desktop
+
 
 ### 1.3 List files in current directory
-
+- In <b>Terminal</b> type:
 ~~~shell
 ls
 ~~~
+- This <i>lists</i> the files in the folder where you are located.
+- You can even see "hidden" files by typing "ls -a"
 
 ### 1.4 Navigate to the folder that contains the sound files you want to work with
-
+- In <b>Terminal</b> type:
 ~~~shell
-cd ~/Desktop/archive
+cd ~/Desktop/SoX-Archive
 ~~~
+- This changes directory or <i>moves</i> you into a new folder using the directions you provide.
+- You can also move up one level by typing "cd .."
+- You can also navigate to the previous directory (i.e. go back) by typing "cd -"
 
 ### 1.5 List files in the archive folder
-
+- In <b>Terminal</b> type:
 ~~~shell
 ls
 ~~~
+- Now you should see the files in our corpus.
 
 ### 1.6 Rename file
-
+- In <b>Terminal</b> type:
 ~~~shell
 mv bbc_rain---rai_nhu0506113 rain.wav
 ~~~
+- This command is used to <i>rename</i> and <i>move</i> files.
+- The file is now named "rain.wav" (much easier to remember!)
 
-**TIP: Drag the file from Finder into Terminal to insert the file name/path.
-That way, you don't have to type it out by hand!
+**TIP: To automatically insert the file name/path, click and drag the file from Finder into Terminal.
 
+- You can also <i>copy</i> files by typing "cp <file name/path> <new path>"
+- You can then <i>delete</i> the file by typing "rm <file name/path>"
 
+  
 ### 1.7 Create folder
-
+- In <b>Terminal</b> type:
 ~~~shell
 mkdir soundfx
 ~~~
-
+- This <i>creates a new folder</i>, which we've named "soundfx"
+  
 ### 1.8 Move files into folder
-
+- In <b>Terminal</b> type:
 ~~~shell
 mv rain.wav /soundfx/rain.wav
 ~~~
+- This <i>moves</i> our sound file called "rain.wav" into the folder "soundfx"
