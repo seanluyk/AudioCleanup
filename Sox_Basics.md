@@ -75,8 +75,9 @@ trim 10 [beginning value in HH:MM:SS] [end value in HH:MM:SS]
 sox celeb1trim.wav celeb1fade.wav \
 fade 5 [fade-in position HH:MM:SS] 2:00 [fade out start HH:MM:SS]
 ~~~
-- You can also set fade in and out times automatically by calculating the duration of the file in the command:
+- You can also set fade in and out times automatically by calculating the duration of the file using soxi
+- - Optionally, you can also specify the type of fade (q for quarter of a sine wave, h for half a sine wave, t for linear (‘triangular’) slope, l for logarithmic, and p for inverted parabola. The default is logarithmic.)
 - In **Terminal** type: 
 ~~~shell
-sox celeb11trim.wav fade t 5 $(soxi -d celeb1trim.wav) 5
+sox celeb1trim.wav celeb1trim2.wav fade t 5 $(soxi -d celeb1trim.wav) 5
 ~~~ 
