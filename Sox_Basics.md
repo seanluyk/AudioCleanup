@@ -5,25 +5,25 @@
 - Navigate to your workshop audio files using the command line
 - In **Terminal** type:
 ~~~shell
-sox filename.wav -n stat
+sox thunder.wav -n stat
 ~~~
 - This provides you with some very basic stats which may be useful/interesting to you
 - You can also use the soxi command to get information from the file header. In **Terminal** type:
 ~~~shell
-soxi filename.wav
+soxi thunder.wav
 ~~~
  - This returns information found in the file's header (e.g. channels, bit rate, duration)
  - You can also type multiple file names after the main stat/soxi commands to get stats returned for multiple files at once for the purposes of comparison:
  ~~~shell
- soxi filename1.wav filename2.wav
- sox filename1.wav filename2.wav -n stat
+ soxi thunder.wav bbc_rain---rai_nhu0506113.wav
+ sox thunder.wav bbc_rain---rai_nhu0506113.wav -n stat
  ~~~
  ### 2.2 Remix an audio file
 - In SoX it is possible to remix audio files in interesting ways
 - For example, you may want to turn a monaural file into a dual mono file, which mimics stereo
 - In **Terminal** type:
 ~~~shell
-sox inputfile.wav outputfile.wav remix 1 1,1
+sox bbc_rain---rai_nhu0506113.wav rain.wav remix 1 1,1
 ~~~ 
 - The first (comma separated) number specifies which channels to remix. The second indicates that two mono channels are to be created
 ### 2.3 Combine multiple audio files
@@ -31,25 +31,24 @@ sox inputfile.wav outputfile.wav remix 1 1,1
 #### Concatenate files
 - In **Terminal** type:
 ~~~shell
-sox --combine concatenate inputfile1.wav inputfile2.wav outputfile.wav
+sox --combine concatenate thunder.wav rain.wav storm.wav
 ~~~
 - Hear the result by typing:
 ~~~shell
-play outputfile.wav
+play storm.wav
 ~~~
 - You can stop playback by typing CTRL+C
 - You can even play files back in reverse! Type:
 ~~~shell
-play outputfile.wav reverse
+play storm.wav reverse
 ~~~
 #### Merge Files
 - In **Terminal** type:
 ~~~shell
-sox -m inputfile1.wav inputfile2.wav outputfile.wav
+sox -m thunder.wav rain.wav storm2.wav
 ~~~ 
 - This will create one file that mixes the other files together
-- Let's combine rain.wav with thunder.wav to create a storm
-- Play back the file you created using the merge command
+- Play back the file you created using the merge command and note the difference between the file produced using the concatenate command
 ### 2.4 Modify files
 - SoX had many commands that allow you to easily modify files using the command line. Today we'll work with some basic ones:
 #### Pad a recording with silence
