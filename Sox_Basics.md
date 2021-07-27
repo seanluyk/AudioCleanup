@@ -58,3 +58,12 @@ pad [amount of silence HH:MM:SS to add at the beginning of your file] [amount of
 sox filename1.wav filename2.wav outputfile.wav \
 fade [fade-in position HH:MM:SS] [fade out start HH:MM:SS]
 ~~~
+#### Trim
+- Used for cutting sections of an audio file
+- Specify how much to trim from start and end of file (*where the file should end)
+- Use 0 as first parameter is not trimming from start
+- - In **Terminal** type:
+~~~shell
+sox filename1.wav filename2.wav outputfile.wav \
+trim [beginning value in HH:MM:SS] [end value in HH:MM:SS]
+~~~ 
