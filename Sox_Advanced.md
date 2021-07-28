@@ -19,12 +19,13 @@ WAV_OUT=$2
 
 sox -S $WAV_IN $WAV_OUT silence 1 0.1 0.1% reverse silence 1 0.1 0.1% reverse
 ~~~
-
+- The "silence" tool has three elements: [position in clip] [length of silence] [percentage of volume that "counts" as silence]
+- BONUS QUESTION: Can you "read" the command above? Is there anything you don't recognize?
 - Save File as cleanSound.sh
 
 ### 3.1 Execute Script on Multiple Files
 
-- In Terminal, navigate to the archive folder
+- In <b>Terminal</b>, navigate to the archive folder
 ~~~shell
 cd /Users/chelseamiya/Desktop/soxArchive
 ~~~
@@ -36,10 +37,12 @@ mkdir cleanFiles
 ~~~shell
 cd radio
 ~~~
-- Paste the following code into Terminal and hit enter:
+- Paste the following code into <b>Terminal</b> and hit enter:
 ~~~shell
 for i in *.wav; do ../cleanSound.sh "${i}" ../cleanFiles/"${i}"; done
 ~~~
+- BONUS QUESTION: Can you "read" the command? Is there anything you don't recognize? What do the two dots mean?
+- How would you execute this command on a single file?
 
 <b>*Note: Permission Errors</b>
 - You may encounter a permission error when trying to execute the script.
