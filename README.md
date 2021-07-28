@@ -3,7 +3,7 @@ This repository contains materials and resources for the Audio Cleanup With SoX 
 ## Ingredients
 1. [SpokenWeb Alberta files](https://drive.google.com/file/d/1cnxVcFl0jO7QllAWMBFmESJv8OVFQDA0/view?usp=sharing)
 2. [Sound Exchange (SoX)](http://sox.sourceforge.net/)
-3. [SoX Cheatsheet](https://docs.google.com/document/d/14tT-iSiK918aZu7MjPhkPKkZ8cIe9NOZRIvaX4TVeew/edit)
+3. [SoX Cheatsheet](https://docs.google.com/document/d/14tT-iSiK918aZu7MjPhkPKkZ8cIe9NOZRIvaX4TVeew/edit?usp=sharing)
 ## Installation and Setup
 - If you haven't already, [install SoX](https://github.com/seanluyk/AudioCleanup/blob/main/Sox_installation.md)
 ## Activities
