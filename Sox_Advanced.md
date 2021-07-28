@@ -26,7 +26,7 @@ sox -S $WAV_IN $WAV_OUT silence 1 0.1 0.1% reverse silence 1 0.1 0.1% reverse
 
 - In Terminal, navigate to the archive folder
 ~~~shell
-cd /Users/chelseamiya/Desktop/archive
+cd /Users/chelseamiya/Desktop/soxArchive
 ~~~
 - Create a new folder called "cleanFiles"
 ~~~shell
@@ -38,5 +38,13 @@ cd radio
 ~~~
 - Paste the following code into Terminal and hit enter:
 ~~~shell
-for i in *.wav; do ./cleanSound.sh "${i}" cleanFiles/"${i}"; done
+for i in *.wav; do ../cleanSound.sh "${i}" ../cleanFiles/"${i}"; done
+~~~
+
+<b>*Note: Permission Errors</b>
+- You may encounter a permission error when trying to execute the script.
+- To give permission to execute the script in the file, type “chmod +x [filepath/name]” into <b>Terminal</b> and hit enter:
+
+~~~shell
+chmod +x ../cleanSound.sh
 ~~~
