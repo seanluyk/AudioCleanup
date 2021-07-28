@@ -20,7 +20,7 @@ WAV_OUT=$2
 sox -S $WAV_IN $WAV_OUT silence 1 0.1 0.1% reverse silence 1 0.1 0.1% reverse
 ~~~
 - The "silence" tool has three elements: [position in clip] [length of silence] [percentage of volume that "counts" as silence]
-- BONUS QUESTION: Can you "read" the command above? Is there anything you don't recognize?
+  - BONUS QUESTION: Can you "read" the command above? Is there anything you don't recognize?
 - Save File as cleanSound.sh
 
 ### 3.1 Execute Script on Multiple Files
@@ -41,8 +41,8 @@ cd radio
 ~~~shell
 for i in *.wav; do ../cleanSound.sh "${i}" ../cleanFiles/"${i}"; done
 ~~~
-- BONUS QUESTION: Can you "read" the command? Is there anything you don't recognize? What do the two dots mean?
-- How would you execute this command on a single file?
+  - BONUS QUESTION: Can you "read" the command? Is there anything you don't recognize? What do the two dots mean?
+  - How would you execute this command on a single file?
 
 <b>*Note: Permission Errors</b>
 - You may encounter a permission error when trying to execute the script.
@@ -51,3 +51,13 @@ for i in *.wav; do ../cleanSound.sh "${i}" ../cleanFiles/"${i}"; done
 ~~~shell
 chmod +x ../cleanSound.sh
 ~~~
+
+
+## Other Features
+
+### 4.1 Reduce file size
+
+~~~shell
+sox in.wav -r 48k out.wav remix 1,2
+~~~
+- This initiates sox (sox), opens the file (in.wav), lowers the audio sample rate to 48k (-r 48k), writes to the new file (out.wav), and converts from stereo to mono (remix 1,2)
