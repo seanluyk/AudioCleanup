@@ -61,3 +61,10 @@ chmod +x ../cleanSound.sh
 sox in.wav -r 48k out.wav remix 1,2
 ~~~
 - This initiates sox (sox), opens the file (in.wav), lowers the audio sample rate to 48k (-r 48k), writes to the new file (out.wav), and converts from stereo to mono (remix 1,2)
+
+### 5.1 Create a spectrogram
+
+~~~shell
+sox in.wav -n spectrogram -o out.png
+~~~
+
