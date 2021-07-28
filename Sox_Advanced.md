@@ -38,11 +38,12 @@ mkdir cleanFiles
 cd radio
 ~~~
 - Paste the following code into <b>Terminal</b> and hit enter:
+  - BONUS QUESTION: Can you "read" the command? Is there anything you don't recognize? What do the two dots mean?
+  - How would you execute this command on a single file?
 ~~~shell
 for i in *.wav; do ../cleanSound.sh "${i}" ../cleanFiles/"${i}"; done
 ~~~
-  - BONUS QUESTION: Can you "read" the command? Is there anything you don't recognize? What do the two dots mean?
-  - How would you execute this command on a single file?
+
 
 <b>*Note: Permission Errors</b>
 - You may encounter a permission error when trying to execute the script.
@@ -68,3 +69,4 @@ sox in.wav -r 48k out.wav remix 1,2
 sox in.wav -n spectrogram -o out.png
 ~~~
 
+### *For the complete list of features see: [SoX Documentation](http://sox.sourceforge.net/sox.html)
