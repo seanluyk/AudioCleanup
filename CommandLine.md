@@ -15,9 +15,9 @@ On Mac
 | ls   | list files in current directory  |
 | cd [file path]   | change directories <br/> e.g. “cd Documents”   |
 | cd -   | navigate to previous directory |
-| ~/   | navigate from root directory  <br/> e.g. “cd ~/Desktop/SoundFiles”  |
-| mkdir [folder name]   | create folder  <br/> e.g. “mkdir SoundFX”  |
-| mv [file name/path] [new file name/path]   | move file location and/or change file name <br/> e.g. “mv old.wav /SoundFX/new.wav” |
+| ~/   | navigate from root directory  <br/> e.g. “cd ~/Desktop/soxArchive”  |
+| mkdir [folder name]   | create folder  <br/> e.g. “mkdir soundfx”  |
+| mv [file name/path] [new file name/path]   | move file location and/or change file name <br/> e.g. “mv old.wav soundfx/new.wav” |
 | up/down arrow   | scroll through previous commands |
   
 
@@ -72,7 +72,12 @@ mv bbc_rain---rai_nhu0506113 rain.wav
 - This command is used to <i>rename</i> and <i>move</i> files.
 - The file is now named "rain.wav" (much easier to remember!)
 
+<img width="536" alt="Screen Shot 2021-07-27 at 7 14 50 PM" src="https://user-images.githubusercontent.com/13421476/127248231-5b9e0b75-cd11-49ef-815f-145c7c965aba.png">
+
+
 **TIP: To automatically insert the file name/path, click and drag the file from Finder into Terminal.
+
+<img width="805" alt="Screen Shot 2021-07-27 at 6 54 34 PM" src="https://user-images.githubusercontent.com/13421476/127246427-cfc7d009-faa7-4929-8114-04c28a0abe11.png">
 
 - You can also <i>copy</i> files by typing "cp [file name/path] [new path]"
 - You can then <i>delete</i> the file by typing "rm [file name/path]"
@@ -84,13 +89,20 @@ mv bbc_rain---rai_nhu0506113 rain.wav
 mkdir soundfx
 ~~~
 - This <i>creates a new folder</i>, which we've named "soundfx"
-  
+
+<img width="529" alt="Screen Shot 2021-07-27 at 7 11 44 PM" src="https://user-images.githubusercontent.com/13421476/127248199-62310a3f-2f32-48d6-8461-765d63b67e4c.png">
+
+
 ### 1.8 Move files into folder
 - In <b>Terminal</b> type:
 ~~~shell
-mv rain.wav /soundfx/rain.wav
+mv rain.wav soundfx/rain.wav
 ~~~
 - This <i>moves</i> our sound file called "rain.wav" into the folder "soundfx"
+- Repeat this with the sound file "thunder.wav"
+
+<img width="436" alt="Screen Shot 2021-07-27 at 7 20 59 PM" src="https://user-images.githubusercontent.com/13421476/127248491-203f6a31-c1bd-48f5-8c8d-60812169a1ff.png">
+
 
 ### 1.9 Scroll through previous commands
 - In <b>Terminal</b>, use the up/down arrows to scroll through your command history
