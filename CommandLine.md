@@ -19,6 +19,7 @@ On Mac
 | mkdir [folder name]   | create folder  <br/> e.g. “mkdir soundfx”  |
 | mv [file name/path] [new file name/path]   | move file location and/or change file name <br/> e.g. “mv old.wav soundfx/new.wav” |
 | up/down arrow   | scroll through previous commands |
+| Ctrl-C  | "abort" current task |
   
 
 
