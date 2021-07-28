@@ -15,15 +15,15 @@ soxi thunder.wav
  - This returns information found in the file's header (e.g. channels, bit rate, duration)
  - You can also type multiple file names after the main stat/soxi commands to get stats returned for multiple files at once for the purposes of comparison:
  ~~~shell
- soxi thunder.wav bbc_rain---rai_nhu0506113.wav
- sox thunder.wav bbc_rain---rai_nhu0506113.wav -n stat
+ soxi thunder.wav rain.wav
+ sox thunder.wav rain.wav -n stat
  ~~~
  ### 2.2 Remix an audio file
 - In SoX it is possible to remix audio files in interesting ways
 - For example, you may want to turn a monaural file into a dual mono file, which mimics stereo
 - In **Terminal** type:
 ~~~shell
-sox bbc_rain---rai_nhu0506113.wav rain.wav remix 1 1,1
+sox rain.wav remix 1 1,1
 ~~~ 
 - The first (comma separated) number specifies which channels to remix. The second indicates that two mono channels are to be created
 ### 2.3 Combine multiple audio files
