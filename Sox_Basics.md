@@ -84,5 +84,5 @@ sox stormtrim.wav stormtrim2.wav fade t 5 $(soxi -d stormtrim.wav) 5
 #### Synthesize Sound
 - Sox can also be used to synthesize sound waves (sine, square, triangle, sawtooth, trapetz (trapezoidal), exp (exponential), whitenoise, pinknoise, and brownnoise)
 ~~~shell
-sox sox -n sine.wav synth 1.0 sine  1000.0
+sox -n sine.wav synth 1.0 sine  1000.0
 ~~~ 
