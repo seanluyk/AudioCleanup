@@ -39,7 +39,7 @@ play storm.wav
 ~~~
 - You can also apply reverb:
 ~~~shell
-sox play storm2.wav reverb
+sox play storm.wav reverb
 ~~~
 - You can stop playback by typing CTRL+C
 - You can even play files back in reverse! Type:
