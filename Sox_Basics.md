@@ -54,29 +54,26 @@ sox -m thunder.wav rain2.wav storm2.wav
 #### Pad a recording with silence
 - In **Terminal** type:
 ~~~shell
-sox storm2.wav stormpad.wav pad  3 [amount of silence HH:MM:SS to add at the beginning of your file] 5 [amount of silence HH:MM:SS to add at the end of your file]  
+sox storm2.wav stormpad.wav pad  5 [amount of silence HH:MM:SS to add at the beginning of your file] 5 [amount of silence HH:MM:SS to add at the end of your file]  
 ~~~ 
 #### Trim
 - Used for cutting sections of an audio file
-- Specify how much to trim from start and end of file (where the file should end)
-- Use 0 as first parameter is not trimming from start
-- Navigate to the radio directory
-- celeb1.wav has ~11 seconds of unnecessary silence at the beginning we'd like to trim. We can trim at the end of the file, but won't today
+- Specify how much to trim from start and end of file (i.e. where the file should end)
+- Use 0 as first parameter if not trimming from start of file
+- We can remove the silence we added to stormpad.wav. We can trim at the end of the file, but won't today
 - In **Terminal** type:
 ~~~shell
-sox celeb1.wav celeb1trim.wav \
-trim 10 [beginning value in HH:MM:SS] [end value in HH:MM:SS]
+sox stormpad.wav stormtrim.wav trim 5 [beginning value in HH:MM:SS] [end value in HH:MM:SS]
 ~~~ 
 #### Apply a fade in/fade out
 - Similar to the pad command, the fade command can be used to add fade-ins/outs to a file:
 - In **Terminal** type:
 ~~~shell
-sox celeb1trim.wav celeb1fade.wav \
-fade 5 [fade-in position HH:MM:SS] 2:00 [fade out start HH:MM:SS]
+sox stormtrim.wav stormfade.wav fade 5 [fade-in position HH:MM:SS] 2:00 [fade out start HH:MM:SS]
 ~~~
 - You can also set fade in and out times automatically by calculating the duration of the file using soxi
 - Optionally, you can also specify the type of fade (q for quarter of a sine wave, h for half a sine wave, t for linear (‘triangular’) slope, l for logarithmic, and p for inverted parabola. The default is logarithmic.)
 - In **Terminal** type: 
 ~~~shell
-sox celeb1trim.wav celeb1trim2.wav fade t 5 $(soxi -d celeb1trim.wav) 5
+sox stormtrim.wav stormtrim2.wav fade t 5 $(soxi -d stormtrim.wav) 5
 ~~~ 
