@@ -23,7 +23,7 @@ soxi thunder.wav
 - For example, you may want to turn a monaural file into a dual mono file, which mimics stereo
 - In **Terminal** type:
 ~~~shell
-sox rain.wav remix 1 1,1
+sox rain.wav rain2.wav remix 1 1,1
 ~~~ 
 - The first (comma separated) number specifies which channels to remix. The second indicates that two mono channels are to be created
 ### 2.3 Combine multiple audio files
