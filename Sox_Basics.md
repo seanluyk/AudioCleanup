@@ -1,6 +1,6 @@
 ## Exercise 2: SoX Basics
 
-### 2.1 Get metadata about an audio file
+### Get metadata about an audio file
 - Open **Terminal**
 - Navigate to your workshop audio files using the command line
 - In **Terminal** type:
@@ -18,7 +18,7 @@ soxi thunder.wav
  soxi thunder.wav rain.wav
  sox thunder.wav rain.wav -n stat
  ~~~
- ### 2.2 Remix an audio file
+ ### Remix an audio file
 - In SoX it is possible to remix audio files in interesting ways
 - For example, you may want to turn a monaural file into a dual mono file, which mimics stereo. Note that rain2.wav is file where we are ouputting the dual mono file to
 - In **Terminal** type:
@@ -26,7 +26,7 @@ soxi thunder.wav
 sox rain.wav rain2.wav remix 1 1,1
 ~~~ 
 - The first (comma separated) number specifies which channels to remix. The second indicates that two mono channels are to be created
-### 2.3 Combine multiple audio files
+### Combine multiple audio files
 - In SoX there are multiple methods for combining audio files, which we'll experiment with below to create a storm from our thunder and rain files:
 #### Concatenate files
 - In **Terminal** type:
@@ -36,6 +36,10 @@ sox --combine concatenate thunder.wav rain2.wav storm.wav
 - Hear the result by typing:
 ~~~shell
 play storm.wav
+~~~
+- You can also apply reverb:
+~~~shell
+sox play storm2.wav reverb
 ~~~
 - You can stop playback by typing CTRL+C
 - You can even play files back in reverse! Type:
@@ -49,7 +53,7 @@ sox -m thunder.wav rain2.wav storm2.wav
 ~~~ 
 - This will create one file that mixes the other files together
 - Play back the file you created using the merge command and note the difference between the file produced using the concatenate command
-### 2.4 Modify files
+### Modify files
 - SoX had many commands that allow you to easily modify files using the command line. Today we'll work with some basic ones:
 #### Pad a recording with silence
 - In **Terminal** type:
@@ -76,4 +80,9 @@ sox stormtrim.wav stormfade.wav fade 5 [fade-in position HH:MM:SS] 2:00 [fade ou
 - In **Terminal** type: 
 ~~~shell
 sox stormtrim.wav stormtrim2.wav fade t 5 $(soxi -d stormtrim.wav) 5
+~~~ 
+#### Synthesize Sound
+- Sox can also be used to synthesize sound waves (sine, square, triangle, sawtooth, trapetz (trapezoidal), exp (exponential), whitenoise, pinknoise, and brownnoise)
+~~~shell
+sox sox -n sine.wav synth 1.0 sine  1000.0
 ~~~ 
