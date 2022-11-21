@@ -20,7 +20,7 @@ soxi thunder.wav
  ~~~
  ### 2.2 Remix an audio file
 - In SoX it is possible to remix audio files in interesting ways
-- For example, you may want to turn a monaural file into a dual mono file, which mimics stereo
+- For example, you may want to turn a monaural file into a dual mono file, which mimics stereo. Note that rain2.wav is file where we are ouputting the dual mono file to
 - In **Terminal** type:
 ~~~shell
 sox rain.wav rain2.wav remix 1 1,1
