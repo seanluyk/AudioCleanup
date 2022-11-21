@@ -31,7 +31,7 @@ sox rain.wav rain2.wav remix 1 1,1
 #### Concatenate files
 - In **Terminal** type:
 ~~~shell
-sox --combine concatenate thunder.wav rain.wav storm.wav
+sox --combine concatenate thunder.wav rain2.wav storm.wav
 ~~~
 - Hear the result by typing:
 ~~~shell
@@ -42,10 +42,10 @@ play storm.wav
 ~~~shell
 play storm.wav reverse
 ~~~
-#### Merge Files
+#### Mix Files
 - In **Terminal** type:
 ~~~shell
-sox -m thunder.wav rain.wav storm2.wav
+sox -m thunder.wav rain2.wav storm2.wav
 ~~~ 
 - This will create one file that mixes the other files together
 - Play back the file you created using the merge command and note the difference between the file produced using the concatenate command
@@ -54,8 +54,7 @@ sox -m thunder.wav rain.wav storm2.wav
 #### Pad a recording with silence
 - In **Terminal** type:
 ~~~shell
-sox storm2.wav stormpad.wav \
-pad  5 [amount of silence HH:MM:SS to add at the beginning of your file] [amount of silence HH:MM:SS to add at the end of your file]  
+sox storm2.wav stormpad.wav pad  3 [amount of silence HH:MM:SS to add at the beginning of your file] 5 [amount of silence HH:MM:SS to add at the end of your file]  
 ~~~ 
 #### Trim
 - Used for cutting sections of an audio file
